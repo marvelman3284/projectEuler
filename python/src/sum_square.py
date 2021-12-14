@@ -1,3 +1,5 @@
+# Problem 6
+
 def sum_squares():
     sum = 0
     for i in range(101):
