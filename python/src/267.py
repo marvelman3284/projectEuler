@@ -5,9 +5,11 @@ def flip() -> bool:
 
 def main():
     best = []
-    for _ in range(1000000):
+    for _ in range(10000):
         total = 0
         bet = random.random()
+        while bet < 0.999:
+            bet = random.random()
         for _ in range(1000):
             if flip():
                 total += bet * 2
